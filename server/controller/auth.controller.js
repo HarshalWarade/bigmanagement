@@ -7,4 +7,13 @@ const home = async (req, res) => {
     }
 }
 
-module.exports = {home}
+const signup = async (req, res) => {
+    try {
+        const {}        
+    } catch (err) {
+        console.log("Some error occured while serving signup route: ", err)
+        return res.status(400).json({msg: "Server error: signup route"})
+    }
+}
+
+module.exports = {home, signup}
